@@ -63,6 +63,7 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 
 - Ver [CLAUDE.md](./CLAUDE.md) para detalles de integración
 - Ver [CONTEXT.md](./CONTEXT.md) para terminología
+- Ver [SLASH-COMMANDS.md](./SLASH-COMMANDS.md) para lista de comandos
 - Ver `docs/adr/` para decisiones arquitectónicas
 
 ## 📦 Versionado
