@@ -8,3 +8,16 @@ build/
 .vscode/settings.json
 .idea/
 .claude/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+venv/
+
+# MCP Servers (exclude virtual environments)
+mcp-servers/*/.venv/
+mcp-servers/*/venv/

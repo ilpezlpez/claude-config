@@ -45,6 +45,12 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 | **azure-manager** | Sonnet | Sprint planning, tareas, documentación |
 | **nmm-golden-demon-critic** | Sonnet | Crítica experta en técnicas de pintura NMM |
 
+## 🔌 MCP Servers (1 configurado)
+
+| Nombre | Descripción | Tecnología |
+|--------|------------|-----------|
+| **imagen-google** | Generar imágenes con Google Imagen v3 y v4 | Python + FastMCP |
+
 ## ⚡ Instalación rápida
 
 ### 🍎 macOS
@@ -82,6 +88,7 @@ O ver [scripts/README.md](./scripts/README.md) para más opciones.
 - Ver [CLAUDE.md](./CLAUDE.md) para detalles de integración
 - Ver [CONTEXT.md](./CONTEXT.md) para terminología
 - Ver [SLASH-COMMANDS.md](./SLASH-COMMANDS.md) para lista de comandos
+- Ver [mcp-servers/README.md](./mcp-servers/README.md) para servidores MCP
 - Ver `docs/adr/` para decisiones arquitectónicas
 
 ## 📦 Versionado
