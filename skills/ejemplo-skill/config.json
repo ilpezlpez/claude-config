@@ -1,0 +1,11 @@
+{
+  "name": "ejemplo-skill",
+  "version": "1.0.0",
+  "description": "Un skill de ejemplo",
+  "author": "Ivan",
+  "enabled": true,
+  "settings": {
+    "timeout": 30000,
+    "retries": 3
+  }
+}
