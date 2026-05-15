@@ -45,7 +45,8 @@ Comandos disponibles en Claude Code para invocar tus skills y agentes personaliz
 |---------|-------|-------------|-----|
 | `/generar-ref` | generar-ref | Generar imagen de referencia con IA (Gemini) | Crear referencias para pintura |
 | `/evaluar-ref` | evaluar-ref | Evaluar referencia como experto Golden Demon | Analizar calidad de referencia |
-| `/esquema-colores` | esquema-colores | Proponer paleta de colores personalizada | Planificar colores antes de pintar |
+| `/esquema-colores` | esquema-colores | Proponer paleta de colores para miniaturas | Planificar colores antes de pintar |
+| `/esquema-digital` | esquema-digital | Proponer paleta para concept art digital | Planificar colores en Photoshop/Procreate |
 
 ## ⚙️ Setup & Config (Built-in)
 
@@ -128,11 +129,18 @@ Fuerza un agente específico con `@nombre`:
 /evaluar-ref "2026-05-14-space-marine/imagen.png"
 ```
 
-### Generar esquema de colores
+### Generar esquema de colores para miniaturas
 ```bash
 /esquema-colores "Space Marine con armadura dorada, cálido, estilo Sergio Calvo"
 
 /esquema-colores "elfo-oscuro.jpg" frío, Kirill Kanaev
+```
+
+### Generar esquema de colores para arte digital
+```bash
+/esquema-digital "Bosque nocturno con ruinas, frío, estilo Craig Mullins"
+
+/esquema-digital "castillo-atardecer.jpg" cálido, Jama Jurabaev
 ```
 
 ## 🔗 Relacionado
