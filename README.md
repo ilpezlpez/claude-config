@@ -12,7 +12,7 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 - **`INSTALLATION.md`** — Cómo instalar agentes y skills
 - **`SLASH-COMMANDS.md`** — Referencia de comandos
 
-## 🚀 Skills (19 personalizados)
+## 🚀 Skills (20 personalizados)
 
 | Nombre | Descripción |
 |--------|-------------|
@@ -34,6 +34,7 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 | **zoom-out** | Perspectiva amplia del proyecto |
 | **generar-ref** | Generar referencias de IA para pintura de miniaturas |
 | **evaluar-ref** | Evaluar referencias como experto Golden Demon |
+| **esquema-colores** | Proponer esquema de colores personalizado con Citadel/Vallejo |
 
 ## 🤖 Agentes (7 especializados)
 
