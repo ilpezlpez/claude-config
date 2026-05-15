@@ -45,6 +45,22 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 | **azure-manager** | Sonnet | Sprint planning, tareas, documentación |
 | **nmm-golden-demon-critic** | Sonnet | Crítica experta en técnicas de pintura NMM |
 
+## ⚡ Instalación rápida
+
+### 🍎 macOS
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/ilpezlpez/claude-config/main/scripts/install-mac.sh)
+```
+
+### 🪟 Windows
+```powershell
+powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/ilpezlpez/claude-config/main/scripts/install-windows.ps1 | iex"
+```
+
+O ver [scripts/README.md](./scripts/README.md) para más opciones.
+
+---
+
 ## 📝 Guía Rápida
 
 ### Crear un nuevo skill
