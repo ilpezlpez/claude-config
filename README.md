@@ -10,17 +10,38 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 - **`CLAUDE.md`** — Guía de integración
 - **`CONTEXT.md`** — Modelo de dominio
 
-## 🚀 Skills
+## 🚀 Skills (17 personalizados)
 
-| Nombre | Descripción | Versión |
-|--------|-------------|---------|
-| (Añade tus skills aquí) | | |
+| Nombre | Descripción |
+|--------|-------------|
+| **diagnose** | Debug bugs y regressions con loop estructurado |
+| **tdd** | Test-driven development: red-green-refactor |
+| **prototype** | Prototypes de UI o validación de data models |
+| **grill-me** | Stress-test planes hasta shared understanding |
+| **grill-with-docs** | Validar contra CONTEXT.md + ADRs |
+| **triage** | Revisar issues a través state machine |
+| **to-issues** | Convertir specs en issues grabables |
+| **to-prd** | Crear PRD desde conversación |
+| **improve-codebase-architecture** | Encontrar oportunidades de refactoring |
+| **caveman** | Ultra-compressed: 75% menos tokens |
+| **handoff** | Compact handoff document para otro agente |
+| **obsidian-vault** | Gestionar notas en Obsidian |
+| **edit-article** | Mejorar artículos y documentación |
+| **write-a-skill** | Crear nuevos skills |
+| **setup-matt-pocock-skills** | Setup de skills recomendados |
+| **zoom-out** | Perspectiva amplia del proyecto |
 
-## 🤖 Agents
+## 🤖 Agentes (7 especializados)
 
-| Nombre | Descripción | Versión |
-|--------|-------------|---------|
-| (Añade tus agentes aquí) | | |
+| Nombre | Modelo | Especialidad |
+|--------|--------|--------------|
+| **code-reviewer** | Haiku | Revisa código, bugs, vulnerabilidades |
+| **developer** | Sonnet | Implementa features, refactoring, tests |
+| **setup-validator** | Sonnet | Valida instalaciones y configuraciones |
+| **architect** | Sonnet | Diseña arquitectura, ADRs, escalabilidad |
+| **qa-engineer** | Sonnet | Testing, cobertura, edge cases |
+| **azure-manager** | Sonnet | Sprint planning, tareas, documentación |
+| **nmm-golden-demon-critic** | Sonnet | Crítica experta en técnicas de pintura NMM |
 
 ## 📝 Guía Rápida
 
