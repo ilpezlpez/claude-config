@@ -9,6 +9,8 @@ Repositorio centralizado para versionar y gestionar skills personalizados y agen
 - **`docs/adr/`** — Decisiones arquitectónicas documentadas
 - **`CLAUDE.md`** — Guía de integración
 - **`CONTEXT.md`** — Modelo de dominio
+- **`INSTALLATION.md`** — Cómo instalar agentes y skills
+- **`SLASH-COMMANDS.md`** — Referencia de comandos
 
 ## 🚀 Skills (17 personalizados)
 
