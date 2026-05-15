@@ -39,6 +39,13 @@ Comandos disponibles en Claude Code para invocar tus skills y agentes personaliz
 | `/edit-article` | edit-article | Mejorar artículos: restructure, clarity, prose | Editar documentación |
 | `/write-a-skill` | write-a-skill | Crear nuevo agent skill con estructura | Crear skills propios |
 
+## 🎨 Pintura de Miniaturas
+
+| Comando | Skill | Descripción | Uso |
+|---------|-------|-------------|-----|
+| `/generar-ref` | generar-ref | Generar imagen de referencia con IA (Gemini) | Crear referencias para pintura |
+| `/evaluar-ref` | evaluar-ref | Evaluar referencia como experto Golden Demon | Analizar calidad de referencia |
+
 ## ⚙️ Setup & Config (Built-in)
 
 | Comando | Descripción | Ubicación |
@@ -108,6 +115,16 @@ Fuerza un agente específico con `@nombre`:
 ### Stress-test un diseño
 ```bash
 /grill-me "¿es buena idea usar GraphQL aquí?"
+```
+
+### Generar referencia para pintura
+```bash
+/generar-ref "Space Marine con armadura dorada NMM, luz cenital"
+```
+
+### Evaluar referencia AI
+```bash
+/evaluar-ref "2026-05-14-space-marine/imagen.png"
 ```
 
 ## 🔗 Relacionado
