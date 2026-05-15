@@ -14,9 +14,31 @@ Sigue estos pasos en orden sin pedir confirmación entre ellos.
 
 Extrae de las instrucciones del usuario:
 - **Prompt base**: la descripción textual de la imagen
-- **Imagen de referencia** (opcional): cualquier ruta de archivo mencionada. Acepta:
+- **Imagen de referencia** (opcional): acepta múltiples formatos:
   - Rutas absolutas: `/ruta/a/imagen.png` o `~/ruta/imagen.jpg`
-  - Nombres de archivo del vault: `nombre.jpg` → ruta completa `/Users/ivan/Documents/Vaults/pintura/_attachments/nombre.jpg`
+  - Nombres de archivo del vault: `nombre.jpg` → `/Users/ivan/Documents/Vaults/pintura/_attachments/nombre.jpg`
+  - **URLs de Instagram**: `https://instagram.com/...` o enlaces diretos a posts
+  - **URLs de internet**: `https://example.com/imagen.jpg` o cualquier enlace HTTP/HTTPS
+
+### Paso 1.1 — Descargar imagen si es URL
+
+Si la referencia es una URL (Instagram, Google, Pinterest, etc.):
+
+```bash
+# Descargar la imagen
+curl -L -o ~/Downloads/ref-temp.jpg "<URL>"
+
+# Confirmar que se descargó
+if [ -f ~/Downloads/ref-temp.jpg ]; then
+  echo "Imagen descargada exitosamente"
+  IMAGEN_REF="~/Downloads/ref-temp.jpg"
+else
+  echo "Error descargando la imagen. Continúa sin imagen de referencia."
+  IMAGEN_REF=""
+fi
+```
+
+Si falla, continúa sin imagen de referencia (no detiene el flujo).
 
 ---
 

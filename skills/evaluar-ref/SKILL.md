@@ -12,10 +12,29 @@ Sigue estos pasos en orden sin pedir confirmación entre ellos.
 
 ## Paso 1 — Identificar la imagen
 
-Extrae de las instrucciones la ruta de la imagen a evaluar. Acepta:
+Extrae de las instrucciones la ruta de la imagen a evaluar. Acepta múltiples formatos:
 - Rutas absolutas: `/ruta/imagen.png`
 - Nombres de archivo del vault: `nombre.jpg` → `/Users/ivan/Documents/Vaults/pintura/_attachments/nombre.jpg`
 - Rutas relativas al vault AI: `2026-05-12-slug/imagen.png` → `/Users/ivan/Documents/Vaults/pintura/05 - Referencias/AI/2026-05-12-slug/imagen.png`
+- **URLs de Instagram**: `https://instagram.com/...` o enlaces diretos a posts
+- **URLs de internet**: `https://example.com/imagen.jpg` o cualquier enlace HTTP/HTTPS
+
+### Paso 1.1 — Descargar imagen si es URL
+
+Si la imagen es una URL (Instagram, Google, Pinterest, etc.):
+
+```bash
+# Descargar la imagen
+curl -L -o ~/Downloads/eval-temp.jpg "<URL>"
+
+# Confirmar que se descargó
+if [ -f ~/Downloads/eval-temp.jpg ]; then
+  IMAGEN_PATH="~/Downloads/eval-temp.jpg"
+else
+  echo "Error descargando la imagen."
+  exit 1
+fi
+```
 
 Si el usuario no especifica imagen, busca la más reciente en `/Users/ivan/Documents/Vaults/pintura/05 - Referencias/AI/` con Bash:
 ```bash

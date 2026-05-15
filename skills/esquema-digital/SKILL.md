@@ -15,8 +15,27 @@ Sigue estos pasos en orden sin pedir confirmación entre ellos.
 Extrae de las instrucciones del usuario:
 - **Referencia**: puede ser:
   - Imagen de referencia (ruta absoluta o nombre del vault): `/ruta/imagen.png` o `nombre.jpg`
+  - **URLs de Instagram**: `https://instagram.com/...` o enlaces diretos a posts
+  - **URLs de internet**: `https://example.com/imagen.jpg` o cualquier enlace HTTP/HTTPS
   - Descripción textual (prompt) de la escena a ilustrar
-  
+
+### Paso 1.1 — Descargar imagen si es URL
+
+Si la referencia es una URL (Instagram, Pinterest, ArtStation, etc.):
+
+```bash
+# Descargar la imagen
+curl -L -o ~/Downloads/digital-temp.jpg "<URL>"
+
+# Confirmar que se descargó
+if [ -f ~/Downloads/digital-temp.jpg ]; then
+  IMAGEN_PATH="~/Downloads/digital-temp.jpg"
+else
+  echo "Error descargando la imagen. Continúa sin imagen de referencia."
+  IMAGEN_PATH=""
+fi
+```
+
 Si hay imagen, léela visualmente con la herramienta Read.
 
 ---
